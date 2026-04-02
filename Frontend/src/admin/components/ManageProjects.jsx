@@ -19,7 +19,7 @@ fetchProjects()
 },[])
 
 const fetchProjects = ()=>{
-axios.get("https://manishportfolio-8oob.onrender.com/api/projects")
+axios.get("https://portfoolio-manish.onrender.com/api/projects")
 // axios.get("http://localhost:5000/api/projects")
 .then(res=>setProjects(res.data))
 }
@@ -35,7 +35,7 @@ const addProject = async(e)=>{
 
 e.preventDefault()
 
-await axios.post("https://manishportfolio-8oob.onrender.com/api/projects",form)
+await axios.post("https://portfoolio-manish.onrender.com/api/projects",form)
 
 setForm({
 title:"",
@@ -50,7 +50,7 @@ fetchProjects()
 
 const deleteProject = async(id)=>{
 
-await axios.delete(`https://manishportfolio-8oob.onrender.com/api/projects/${id}`)
+await axios.delete(`https://portfoolio-manish.onrender.com/api/projects/${id}`)
 
 fetchProjects()
 
