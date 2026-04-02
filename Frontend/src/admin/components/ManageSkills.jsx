@@ -17,7 +17,7 @@ function ManageSkills() {
 
   const fetchSkills = () => {
     axios
-      .get("https://manishportfolio-8oob.onrender.com/api/skills")
+      .get("https://portfoolio-manish.onrender.com/api/skills")
       .then((res) => setSkills(res.data));
   };
 
@@ -31,7 +31,7 @@ function ManageSkills() {
   const addSkill = async (e) => {
     e.preventDefault();
 
-    await axios.post("https://manishportfolio-8oob.onrender.com/api/skills", form);
+    await axios.post("https://portfoolio-manish.onrender.com/api/skills", form);
 
     setForm({
       name: "",
@@ -43,7 +43,7 @@ function ManageSkills() {
   };
 
   const deleteSkill = async (id) => {
-    await axios.delete(`https://manishportfolio-8oob.onrender.com/api/skills/${id}`);
+    await axios.delete(`https://portfoolio-manish.onrender.com/api/skills/${id}`);
 
     fetchSkills();
   };
