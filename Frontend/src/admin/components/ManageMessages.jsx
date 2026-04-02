@@ -67,14 +67,14 @@ fetchMessages()
 },[])
 
 const fetchMessages = ()=>{
-axios.get("https://manishportfolio-8oob.onrender.com/api/messages")
+axios.get("https://portfoolio-manish.onrender.com/api/messages")
 // axios.get("http://localhost:5000/api/messages")
 .then(res=>setMessages(res.data))
 }
 
 const deleteMessage = async(id)=>{
 
-await axios.delete(`http://localhost:5000/api/messages/${id}`)
+await axios.delete(`https://portfoolio-manish.onrender.com/api/messages/${id}`)
 
 fetchMessages()
 
