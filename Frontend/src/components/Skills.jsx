@@ -8,7 +8,7 @@ const [skills,setSkills] = useState([])
 
 useEffect(()=>{
 
-axios.get("https://manishportfolio-8oob.onrender.com/api/skills")
+axios.get("https://portfoolio-manish.onrender.com/api/skills")
 .then(res=>{
 
 setSkills(res.data)
