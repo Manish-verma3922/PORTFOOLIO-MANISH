@@ -7,7 +7,7 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("https://manishportfolio-8oob.onrender.com/api/projects")
+      .get("https://portfoolio-manish.onrender.com/api/projects")
       .then((res) => {
         setProjects(res.data);
       })
