@@ -21,7 +21,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      await axios.post("https://manishportfolio-8oob.onrender.com/api/contact", formData);
+      await axios.post("https://portfoolio-manish.onrender.com/api/contact", formData);
 
       alert("Message Sent Successfully!");
 
